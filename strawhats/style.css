@@ -101,6 +101,11 @@ html {
     top: 0;
 }
 
+@font-face {
+    font-family: Kajiro;
+    src: url(fonts/Kajiro.ttf);
+}
+
 #heroleft .elem h1 {
     position: absolute;
     top: 100%;
