@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+}
+
+#back img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#top {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#workingarea {
+    position: relative;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    max-width: 1920px;
+}
+
+#nav {
+    pointer-events: all;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav img {
+    height: 60px;
+    rotate: -4deg;
+}
+
+#nleft,
+#nright {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nleft a,
+#nright a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#hero {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#heroleft {
+    min-width: 50%;
+}
+
+#heroleft .elem {
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+}
+
+#heroleft .elem h1:nth-child(1) {
+    top: 0;
+}
+
+#heroleft .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 0.9;
+    font-family: "Kajiro";
+    color: white;
+    font-size: 10vw;
+    font-weight: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 850px) {
+    #heroleft .elem {
+        height: 15vw;
+    }
+
+    #heroleft .elem h1 {
+        font-size: 16vw;
+    }
+}
+
+@media (max-width: 750px) {
+    #heroleft {
+        min-width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    #heroleft .elem {
+        height: 12vw;
+    }
+
+    #heroleft .elem h1 {
+        font-size: 13vw;
+    }
+
+    #nav img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    #heroleft .elem {
+        height: 10vw;
+    }
+
+    #heroleft .elem h1 {
+        font-size: 11vw;
+    }
+}
+
+#heroright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    width: 20%;
+}
+
+#heroright p {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+@media (max-width: 750px) {
+    #heroright p {
+        font-size: 10px;
+        font-weight: 400;
+        word-spacing: 1px;
+        letter-spacing: 0.5px;
+    }
+    #heroright {
+        width: 30%;
+    }
+}
+
+@media (max-width: 550px) {
+    #heroright p {
+        font-size: 8px;
+        font-weight: 400;
+    }
+    #heroright {
+        width: 30%;
+    }
+}
+
+#heroright #imagediv {
+    width: 100%;
+    height: 170px;
+    border-radius: 3px;
+    margin: 20px 0 30px 0;
+    background-image: url("images/emethmeetsjoyboy.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#heroright p:nth-child(4) {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 750px) {
+    #heroright #imagediv {
+        height: 140px;
+    }
+}
